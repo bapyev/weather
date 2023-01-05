@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.current{
+    text-align: center;
+}
+.hourly, .daily{
+    background-color: rgba(255, 255, 255, 0.416);
+    border-radius: 10px;
+    padding: 10px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.currentTemp{
+    font-size: 48px;
+}
+.hourly{
+    display: flex;
+    text-align: center;
+    width: 50%;
+    overflow: scroll;
+    margin: 40px 0;
+}
+body{
+    background-color: skyblue;
+}
+.daily{
+    width: 50%;
+}
+.day{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nameDay{
+    width: 25%;
+}
+select{
+    width: 150px;
+    height: 40px;
+    font-size: 2em;
+    border: none;
+    text-align: center;
+    background-color: rgba(133, 201, 228, 0.562);
+}
+@media (max-width: 576px) {
+    .daily{
+        width: 90%;
+    }
+    .hourly{
+        width: 90%;
+    }
+}
